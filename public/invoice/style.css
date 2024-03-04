@@ -1,0 +1,281 @@
+@font-face {
+  font-family: SourceSansPro;
+  src: url(/invoice/SourceSansPro-Regular.ttf);
+}
+
+:root {
+  --primary-color: #0073ffdd;
+  --secondary-color: #0073ff25;
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+a {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+body {
+  position: relative;
+  width: 21cm;
+  /* height: 29.7cm; */
+  margin: 0 auto;
+  color: #555555;
+  background: #FFFFFF;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  font-family: SourceSansPro;
+  padding-bottom: 40px;
+}
+
+header {
+  padding: 10px 0;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #AAAAAA;
+}
+
+#logo {
+  float: left;
+  margin-top: 8px;
+}
+
+#logo img {
+  height: 90px;
+}
+
+#company {
+  float: right;
+  text-align: right;
+}
+
+
+#details {
+  margin-bottom: 25px;
+}
+
+#client {
+  padding-left: 6px;
+  border-left: 6px solid var(--primary-color);
+  float: left;
+}
+
+#client .to {
+  color: #777777;
+}
+
+h1.name {
+  font-size: 2em;
+  font-weight: normal;
+  margin: 0;
+}
+
+#invoice {
+  float: right;
+  text-align: right;
+}
+
+#invoice h1 {
+  color: var(--primary-color);
+  font-size: 2.4em;
+  line-height: 1em;
+  font-weight: normal;
+  margin: 0  0 10px 0;
+}
+
+#invoice .date {
+  font-size: 1.1em;
+  color: #777777;
+}
+
+table.table {
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+  margin-bottom: 20px;
+}
+
+table.table th,
+table.table td {
+  padding: 5px 10px;
+  background: #EEEEEE;
+  text-align: center;
+  border-bottom: 1px solid #FFFFFF;
+}
+
+table.table th {
+  white-space: nowrap;
+  font-weight: bold;
+}
+
+table.table td {
+  text-align: right;
+}
+
+table.table td h3{
+  color: var(--primary-color);
+  font-size: 1.2em;
+  font-weight: normal;
+  margin: 0 0 0.2em 0;
+}
+
+table.table .no {
+  width: 12px;
+  color: #FFFFFF;
+  font-size: 1.6em;
+  background: var(--primary-color);
+}
+
+table.table .desc {
+  text-align: left;
+}
+
+table.table th.desc {
+  text-align: center;
+}
+
+table.table .unit {
+  width: 77px;
+  background: #DDDDDD;
+}
+
+table.table .qty {
+  width: 77px;
+}
+
+table.table .total {
+  width: 77px;
+  background: var(--primary-color);
+  color: #FFFFFF;
+}
+
+table.table td.unit,
+table.table td.qty,
+table.table td.total {
+  font-size: 1.2em;
+}
+
+table.table tbody tr:last-child td {
+  border: none;
+}
+
+table.table tfoot td {
+  padding: 5px 10px;
+  background: #FFFFFF;
+  border-bottom: none;
+  font-size: 1.2em;
+  white-space: nowrap;
+  border-top: 1px solid #AAAAAA;
+}
+
+table.table tfoot tr:first-child td {
+  border-top: none;
+}
+
+table.table tfoot tr:last-child td {
+  color: var(--primary-color);
+  font-size: 1.4em;
+  border-top: 1px solid var(--primary-color);
+
+}
+
+table.table tfoot tr td:first-child {
+  border: none;
+}
+
+#thanks{
+  font-size: 2em;
+  margin-bottom: 50px;
+}
+
+#notices{
+  padding: 5px 10px;
+  border-left: 6px solid var(--primary-color);
+  background: var(--secondary-color);
+}
+
+#notices .notice {
+  font-size: 1em;
+}
+
+/* footer {
+  display: none;
+  color: #777777;
+  width: 100%;
+  height: 30px;
+  position: absolute;
+  bottom: 0;
+  border-top: 1px solid #AAAAAA;
+  padding: 8px 0;
+  text-align: center;
+} */
+
+h2 {
+  margin: 0px 0px 5px 0px;
+}
+
+.t1 {
+  font-size: medium;
+}
+
+.t2 {
+  font-size: x-large;
+}
+
+/* Define styles for footer */
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 30px;
+  border-top: 1px solid #AAAAAA;
+  padding: 8px 0;
+  text-align: center;
+  display: none; /* Hide footer by default */
+}
+
+@page {
+  margin: 10mm
+}
+
+/* Show footer when printing */
+@media print {
+  footer {
+    display: block;
+  }
+  thead {
+    display: table-header-group;
+  }
+  tfoot {
+    display: table-footer-group;
+  }
+  body {
+    margin: 0;
+  }
+}
+
+.page-header, .page-header-space {
+  height: 148px;
+  width: 21cm;
+  background-color: white;
+}
+
+.page-footer, .page-footer-space {
+  height: 47px;
+  width: 21cm;
+  background-color: white;
+}
+
+.page-footer {
+  position: fixed;
+  bottom: 0;
+}
+
+.page-header {
+  position: fixed;
+  top: 0;
+}
