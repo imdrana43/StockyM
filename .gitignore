@@ -1,17 +1,14 @@
+node_modules
+package-lock.json
+.env
+
 storage/app/public/installed
-
 storage/framework/cache/data/*
-
 storage/framework/sessions/*
-
 storage/framework/views/*
-
 storage/logs/*
-
 storage/oauth-private.key
 storage/oauth-public.key
-
-.env
 
 public/images/*.png
 !public/images/background_invoice.jpg
@@ -30,13 +27,10 @@ public/images/*.png
 
 
 public/images/avatar/*
-!public/images/avatar/no_avatar.png
-
 public/images/brands/*
-!public/images/brands/no-image.png
-
 public/images/leaves/*
-!public/images/leaves/no-image.png
-
 public/images/products/*
+!public/images/avatar/no_avatar.png
+!public/images/brands/no-image.png
+!public/images/leaves/no-image.png
 !public/images/products/no-image.png
